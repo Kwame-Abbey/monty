@@ -17,6 +17,6 @@ void pop_out_stack(stack_t **stack, unsigned int line_num)
 		exit(EXIT_FAILURE);
 	}
 	top = *stack;
-	*top = top->next;
+	*stack = top->next;
 	free(top);
 }

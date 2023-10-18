@@ -20,7 +20,7 @@ void add_to_queue(stack_t **stack, int n)
 {
 	stack_t *new_node, *top;
 
-	top = *head;
+	top = *stack;
 	new_node = malloc(sizeof(stack_t));
 	if (new_node == NULL)
 	{
