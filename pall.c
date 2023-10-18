@@ -2,18 +2,18 @@
 /**
  * _pall - prints the stack
  * @stack: stack
- * @line_num: unused parameter
+ * @line_num: Unused parameter
 */
 void _pall(stack_t **stack, unsigned int line_num)
 {
-	stack_t *h = *stack;
-	(void)counter;
+	stack_t *top = *stack;
+	(void)line_num;
 
-	if (h == NULL)
+	if (top == NULL)
 		return;
-	while (h)
+	while (top)
 	{
-		printf("%d\n", h->n);
-		h = h->next;
+		printf("%d\n", top->n);
+		top = top->next;
 	}
 }
