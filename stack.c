@@ -8,5 +8,5 @@ void _stack(stack_t **stack, unsigned int line_num)
 {
 	(void)stack;
 	(void)line_num;
-	bus.lifi = 0;
+	all.lit = 0;
 }

@@ -15,8 +15,8 @@ void sub_top_two(stack_t **stack, unsigned int line_num)
 	if (j < 2)
 	{
 		fprintf(stderr, "L%d: can't sub, stack too short\n", line_num);
-		fclose(bus.file);
-		free(bus.content);
+		fclose(all.file);
+		free(all.content);
 		free_stack(*stack);
 		exit(EXIT_FAILURE);
 	}

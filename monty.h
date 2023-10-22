@@ -27,17 +27,17 @@ typedef struct stack_s
  * @arg: value
  * @file: pointer to monty file
  * @content: line content
- * @lifi: flag change stack <-> queue
+ * @lit: flag change stack to queue
  * Description: carries values through the program
  */
-typedef struct bus_s
+typedef struct all_s
 {
 	char *arg;
 	FILE *file;
 	char *content;
-	int lifi;
-}  bus_t;
-extern bus_t bus;
+	int lit;
+}  all_t;
+extern all_t all;
 /**
  * struct instruction_s - opcode and its function
  * @opcode: the opcode

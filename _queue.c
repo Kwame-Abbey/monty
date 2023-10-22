@@ -8,7 +8,7 @@ void _queue(stack_t **stack, unsigned int line_num)
 {
 	(void)stack;
 	(void)line_num;
-	bus.lifi = 1;
+	all.lit = 1;
 }
 
 /**
